@@ -10,8 +10,6 @@ export class ReservationService {
 
   private apiUrl = 'http://localhost:3001';
 
-  private reservations: Reservation[] = [];
-
   constructor(private http: HttpClient) { }
 
   getReservations(): Observable<Reservation[]> {
